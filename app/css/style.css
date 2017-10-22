@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .header {
   background-color: #ffc705;
   background: linear-gradient(90deg, #ebb600, #ffc705, #ebb600);
