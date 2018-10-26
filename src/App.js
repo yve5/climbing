@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+import {Button, Icon} from 'react-materialize'
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +21,13 @@ class App extends Component {
           >
             Learn React
           </a>
+
+
+          <Button waves='light'>
+            <Icon>thumb_up</Icon>
+          </Button>
+
+
         </header>
       </div>
     );
