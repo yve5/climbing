@@ -8,11 +8,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="/" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="sass.html">Sass</a></li>
               <li><a href="badges.html">Components</a></li>
@@ -36,12 +34,9 @@ class App extends Component {
             Learn React
           </a>
 
-
           <Button waves='light'>
             <Icon>thumb_up</Icon>
           </Button>
-
-
         </header>
 
 
@@ -54,18 +49,15 @@ class App extends Component {
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
           <Row>
-  <Input s={12} type='select' label="Materialize Select" defaultValue='2'>
-    <option value='1'>Option 1</option>
-    <option value='2'>Option 2</option>
-    <option value='3'>Option 3</option>
-  </Input>
-</Row>
+            <Input s={12} type='select' label="Materialize Select" defaultValue='2'>
+              <option value='1'>Option 1</option>
+              <option value='2'>Option 2</option>
+              <option value='3'>Option 3</option>
+            </Input>
+          </Row>
         </div>
 
-
-
-
-
+        
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -91,8 +83,6 @@ class App extends Component {
             </div>
           </div>
         </footer>
-
-
 
       </div>
     );
