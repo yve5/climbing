@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/climbing/static/css/main.65951e3b.chunk.css"
   },
   {
-    "revision": "46816cd65ca8e7d5d5aeacb7d1884985",
+    "revision": "ccc4b754df05d4d645124ce6e9837ff6",
     "url": "/climbing/index.html"
   }
 ];
