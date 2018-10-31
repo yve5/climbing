@@ -26,7 +26,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "node-sass": "^4.9.4",
-    "react-materialize": "^2.4.7"
+    "node-sass": "^4.9.4"
   }
 }
