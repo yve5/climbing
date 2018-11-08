@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+import Home from './Home/Home';
+
 import {
   Button,
   Container,
@@ -13,9 +15,9 @@ import {
   DropdownItem
 } from 'reactstrap';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link } from "react-router-dom";
 
-const Index = () => <h2>Home</h2>;
+// const Index = () => <h2>Home</h2>;
 const About = () => <h2>About</h2>;
 const Users = () => <h2>Users</h2>;
 
@@ -37,15 +39,17 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter>
         <Container className="App">
           <Row>
             <Col>
               <Link to="/">Home</Link>
+              -
               <Link to="/about">About</Link>
+              -
               <Link to="/users">Users</Link>
 
-              <Route path="/" exact component={Index} />
+              <Route path="/" exact component={Home} />
               <Route path="/about/" component={About} />
               <Route path="/users/" component={Users} />
               
@@ -103,7 +107,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
-      </Router>
+      </HashRouter>
     );
   }
 }
