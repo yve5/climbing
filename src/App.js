@@ -1,40 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 
 import Home from './Home/Home';
+import About from './About/About';
+import Users from './Users/Users';
 
 import {
-  Button,
   Container,
   Row,
   Col,
-  Dropdown,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
 
-import { HashRouter, Route, Link } from "react-router-dom";
+import {
+  HashRouter,
+  Route,
+  Link
+  // NavLink
+} from "react-router-dom";
 
-// const Index = () => <h2>Home</h2>;
-const About = () => <h2>About</h2>;
-const Users = () => <h2>Users</h2>;
+
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleaze = this.toggleaze.bind(this);
+
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      isOpen: false
     };
   }
 
-  toggle() {
-    this.setState(prevState => ({
-      dropdownOpen: !prevState.dropdownOpen
-    }));
+  toggleaze() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
 
   render() {
@@ -43,67 +54,46 @@ class App extends Component {
         <Container className="App">
           <Row>
             <Col>
-              <Link to="/">Home</Link>
-              -
-              <Link to="/about">About</Link>
-              -
-              <Link to="/users">Users</Link>
+
+              <Navbar color="light" light expand="md">
+                <NavbarBrand href="/">Brand</NavbarBrand>
+                <NavbarToggler onClick={this.toggleaze} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                  <Nav className="ml-auto" navbar>
+                    <NavItem>
+                      <Link to="/" className="nav-link">Home</Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link to="/about" className="nav-link">About</Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link to="/users" className="nav-link">Users</Link>
+                    </NavItem>
+                    <UncontrolledDropdown nav inNavbar>
+                      <DropdownToggle nav caret>
+                        Options
+                      </DropdownToggle>
+                      <DropdownMenu right>
+                        <DropdownItem>
+                          Option 1
+                        </DropdownItem>
+                        <DropdownItem>
+                          Option 2
+                        </DropdownItem>
+                        <DropdownItem divider />
+                        <DropdownItem>
+                          Reset
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
+                  </Nav>
+                </Collapse>
+              </Navbar>
+
 
               <Route path="/" exact component={Home} />
               <Route path="/about/" component={About} />
               <Route path="/users/" component={Users} />
-              
-              
-
-              <img src={logo} className="App-logo" alt="logo" />
-
-              <p>
-                Edit <code>src/App.js</code> and save to reload.
-              </p>
-
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <h1>Button</h1>
-              
-              <Row>
-                <Col>
-                  <Button color="danger">Hello World!</Button>
-                </Col>
-                <Col className="text-right">
-                  <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                    <DropdownToggle caret>
-                      Dropdown
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem header>Header</DropdownItem>
-                      <DropdownItem disabled>Action</DropdownItem>
-                      <DropdownItem>Another Action</DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem>Another Action</DropdownItem>
-                    </DropdownMenu>
-                  </Dropdown>
-                </Col>
-              </Row>
-
-              <p className="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-
             </Col>
           </Row>
         </Container>
