@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import Home from './Home/Home';
-import About from './About/About';
-import Users from './Users/Users';
+import Accueil from './Accueil/Accueil';
+import Sorties from './Sorties/Sorties';
+import Evenements from './Evenements/Evenements';
 
 import {
   Container,
@@ -14,18 +14,17 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavItem
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem
 } from 'reactstrap';
 
 import {
   HashRouter,
   Route,
   Link
-  // NavLink
 } from "react-router-dom";
 
 
@@ -53,23 +52,23 @@ class App extends Component {
       <HashRouter>
         <Container className="App">
           <Row>
-            <Col>
+            <Col className="col-10 offset-1">
 
-              <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">Brand</NavbarBrand>
+              <Navbar color="light navbar-gutter" light expand="md">
+                <NavbarBrand href="/">CLIMBING</NavbarBrand>
                 <NavbarToggler onClick={this.toggleaze} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <Link to="/" className="nav-link">Home</Link>
+                      <Link to="/" className="nav-link">Accueil</Link>
                     </NavItem>
                     <NavItem>
-                      <Link to="/about" className="nav-link">About</Link>
+                      <Link to="/sorties" className="nav-link">Sorties</Link>
                     </NavItem>
                     <NavItem>
-                      <Link to="/users" className="nav-link">Users</Link>
+                      <Link to="/evenements" className="nav-link">Évènements</Link>
                     </NavItem>
-                    <UncontrolledDropdown nav inNavbar>
+                    {/*<UncontrolledDropdown nav inNavbar>
                       <DropdownToggle nav caret>
                         Options
                       </DropdownToggle>
@@ -85,15 +84,18 @@ class App extends Component {
                           Reset
                         </DropdownItem>
                       </DropdownMenu>
-                    </UncontrolledDropdown>
+                    </UncontrolledDropdown>*/}
                   </Nav>
                 </Collapse>
               </Navbar>
 
-
-              <Route path="/" exact component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/users/" component={Users} />
+            </Col>
+          </Row>
+          <Row>
+            <Col className="col-10 offset-1">
+              <Route path="/" exact component={Accueil} />
+              <Route path="/sorties/" component={Sorties} />
+              <Route path="/evenements/" component={Evenements} />
             </Col>
           </Row>
         </Container>
