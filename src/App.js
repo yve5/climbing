@@ -33,7 +33,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.toggleaze = this.toggleaze.bind(this);
+    this.toggle = this.toggle.bind(this);
 
     this.state = {
       dropdownOpen: false,
@@ -41,7 +41,7 @@ class App extends Component {
     };
   }
 
-  toggleaze() {
+  toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
@@ -55,8 +55,8 @@ class App extends Component {
             <Col className="col-10 offset-1">
 
               <Navbar color="light navbar-gutter" light expand="md">
-                <NavbarBrand href="/">CLIMBING</NavbarBrand>
-                <NavbarToggler onClick={this.toggleaze} />
+                <NavbarBrand>CLIMBING</NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
