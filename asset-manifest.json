@@ -1,7 +1,7 @@
 {
   "main.css": "/climbing/static/css/main.e074801e.chunk.css",
-  "main.js": "/climbing/static/js/main.9877b29c.chunk.js",
-  "main.js.map": "/climbing/static/js/main.9877b29c.chunk.js.map",
+  "main.js": "/climbing/static/js/main.d9640805.chunk.js",
+  "main.js.map": "/climbing/static/js/main.d9640805.chunk.js.map",
   "static/css/1.cc627de0.chunk.css": "/climbing/static/css/1.cc627de0.chunk.css",
   "static/js/1.2a0ff137.chunk.js": "/climbing/static/js/1.2a0ff137.chunk.js",
   "static/js/1.2a0ff137.chunk.js.map": "/climbing/static/js/1.2a0ff137.chunk.js.map",
@@ -13,6 +13,6 @@
   "static/media/feuille.jpg": "/climbing/static/media/feuille.e2f2c8c1.jpg",
   "static/css/1.cc627de0.chunk.css.map": "/climbing/static/css/1.cc627de0.chunk.css.map",
   "index.html": "/climbing/index.html",
-  "precache-manifest.30dab7cacce076d2a47b75a4d1c4d1d7.js": "/climbing/precache-manifest.30dab7cacce076d2a47b75a4d1c4d1d7.js",
+  "precache-manifest.5bd7964024f93e5387db0f2ac0132d91.js": "/climbing/precache-manifest.5bd7964024f93e5387db0f2ac0132d91.js",
   "service-worker.js": "/climbing/service-worker.js"
 }
