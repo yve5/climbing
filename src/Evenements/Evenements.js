@@ -10,13 +10,14 @@ class Evenements extends Component {
           Au CLIMBING, le partage dans la bonne humeur de nos activités favorites est primordial.
           <br />
           C'est pourquoi nous organisons différents évènements tout au long de l'année pour vous faire découvrir les multiples facettes de la grimpe et partager notre passion :
-          <ul>
-            <li>participation au Téléthon avec l'installation d'une décente en rappel le long du centre administratif de Clamart,</li>
-            <li>soirées vidéos avec projection de films de grimpe,</li>
-            <li>challenge à thème,</li>
-            <li>stages et séjours...</li>
-          </ul>
         </p>
+
+        <ul>
+          <li>participation au Téléthon avec l'installation d'une décente en rappel le long du centre administratif de Clamart,</li>
+          <li>soirées vidéos avec projection de films de grimpe,</li>
+          <li>challenge à thème,</li>
+          <li>stages et séjours...</li>
+        </ul>
 
         <h2>Compétitions</h2>
         <p>

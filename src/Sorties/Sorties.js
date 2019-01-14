@@ -2,23 +2,6 @@ import React, { Component } from 'react';
 import './Sorties.scss';
 
 class Sorties extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-
-    this.state = {
-      dropdownOpen: false,
-      isOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState(prevState => ({
-      dropdownOpen: !prevState.dropdownOpen
-    }));
-  }
-
   render() {
     return (
       <div>
@@ -37,12 +20,13 @@ class Sorties extends Component {
 
         <p>
           Pour cette raison, le CLIMBING organise une sortie en site naturel chaque mois ainsi que plusieurs week-end et stages dans l'année:
-          <ul>
-            <li>Sorties en falaises</li>
-            <li>Sorties bloc</li>
-            <li>Week-end et stages d'escalade</li>
-          </ul>
         </p>
+
+        <ul>
+          <li>Sorties en falaises</li>
+          <li>Sorties bloc</li>
+          <li>Week-end et stages d'escalade</li>
+        </ul>
 
         <p>
           Les sorties se font généralement avec un car ou par co-voiturage.
@@ -50,11 +34,12 @@ class Sorties extends Component {
 
         <p>
           Les départs et les retours se font toujours place Ferrari à Clamart (heure donnée à titre indicatif):
-          <ul>
-            <li>Départ à 9H00, retour vers 18H00 pour les sorties à Fontainebleau.</li>
-            <li>Départ à 8H00, retour vers 20H00 pour les sorties en falaise.</li>
-          </ul>
         </p>
+
+        <ul>
+          <li>Départ à 9H00, retour vers 18H00 pour les sorties à Fontainebleau.</li>
+          <li>Départ à 8H00, retour vers 20H00 pour les sorties en falaise.</li>
+        </ul>
 
         <p>
           Les participants doivent être munis de vêtements adaptés à l'activité et à la saison, notamment de chaussures de randonnée, de vêtements chauds et imperméables. Ils doivent également prévoir leur repas de midi (pique-nique), boissons en quantité suffisante (au minimum 1 litre), et leur matériel personnel d'escalade (voir la page "sécurité et matériel").

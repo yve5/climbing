@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 
+import Header from './Header/Header';
 import Accueil from './Accueil/Accueil';
 import Sorties from './Sorties/Sorties';
 import Evenements from './Evenements/Evenements';
@@ -9,22 +10,11 @@ import {
   Container,
   Row,
   Col,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem
 } from 'reactstrap';
 
 import {
   HashRouter,
   Route,
-  Link
 } from "react-router-dom";
 
 
@@ -33,18 +23,17 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
+    this.handleCollapseChange = this.handleCollapseChange.bind(this);
 
     this.state = {
-      dropdownOpen: false,
-      isOpen: false
+      collapse: true
     };
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+  handleCollapseChange(newValue) {
+    this.setState({collapse: newValue});
+
+    console.log('hello', this.state.collapse);
   }
 
   render() {
@@ -53,42 +42,10 @@ class App extends Component {
         <Container className="App">
           <Row>
             <Col className="col-10 offset-1">
-
-              <Navbar color="light navbar-gutter" light expand="md">
-                <NavbarBrand>CLIMBING</NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} navbar>
-                  <Nav className="ml-auto" navbar>
-                    <NavItem>
-                      <Link to="/" className="nav-link">Accueil</Link>
-                    </NavItem>
-                    <NavItem>
-                      <Link to="/sorties" className="nav-link">Sorties</Link>
-                    </NavItem>
-                    <NavItem>
-                      <Link to="/evenements" className="nav-link">Évènements</Link>
-                    </NavItem>
-                    {/*<UncontrolledDropdown nav inNavbar>
-                      <DropdownToggle nav caret>
-                        Options
-                      </DropdownToggle>
-                      <DropdownMenu right>
-                        <DropdownItem>
-                          Option 1
-                        </DropdownItem>
-                        <DropdownItem>
-                          Option 2
-                        </DropdownItem>
-                        <DropdownItem divider />
-                        <DropdownItem>
-                          Reset
-                        </DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>*/}
-                  </Nav>
-                </Collapse>
-              </Navbar>
-
+              <Header 
+                collapse={this.state.collapse}
+                onCollapseChange={this.handleCollapseChange}
+                />
             </Col>
           </Row>
           <Row>
