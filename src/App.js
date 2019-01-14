@@ -32,8 +32,6 @@ class App extends Component {
 
   handleCollapseChange(newValue) {
     this.setState({collapse: newValue});
-
-    console.log('hello', this.state.collapse);
   }
 
   render() {
