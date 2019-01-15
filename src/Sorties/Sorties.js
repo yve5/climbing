@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Sorties.scss';
 
 class Sorties extends Component {
   render() {

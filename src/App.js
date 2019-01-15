@@ -31,30 +31,33 @@ class App extends Component {
   }
 
   handleCollapseChange(newValue) {
-    this.setState({collapse: newValue});
+    this.setState({ collapse: newValue });
   }
 
   render() {
     return (
-      <HashRouter>
-        <Container className="App">
-          <Row>
-            <Col className="col-10 offset-1">
-              <Header 
-                collapse={this.state.collapse}
-                onCollapseChange={this.handleCollapseChange}
+      <div>
+        <div className="parallax">Parallax area</div>
+        <HashRouter>
+          <Container className="App">
+            <Row>
+              <Col className="col-10 offset-1">
+                <Header
+                  collapse={this.state.collapse}
+                  onCollapseChange={this.handleCollapseChange}
                 />
-            </Col>
-          </Row>
-          <Row>
-            <Col className="col-10 offset-1">
-              <Route path="/" exact component={Accueil} />
-              <Route path="/sorties/" component={Sorties} />
-              <Route path="/evenements/" component={Evenements} />
-            </Col>
-          </Row>
-        </Container>
-      </HashRouter>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="col-10 offset-1">
+                <Route path="/" exact component={Accueil} />
+                <Route path="/sorties/" component={Sorties} />
+                <Route path="/evenements/" component={Evenements} />
+              </Col>
+            </Row>
+          </Container>
+        </HashRouter>
+      </div>
     );
   }
 }
