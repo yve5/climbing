@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/climbing/precache-manifest.8e14de9b04cf6875f35c53c3bab62dfa.js"
+  "/climbing/precache-manifest.9532e43dc7789d16c5463f692431100e.js"
 );
 
 workbox.clientsClaim();
