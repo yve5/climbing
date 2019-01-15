@@ -10,5 +10,29 @@ body {
 
 .parallax {
   background-color: lime;
-  padding: 10px;
+  box-sizing: border-box;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  perspective: 1px;
+  height: 300px;
+  // height: 100vh;
+
+  &__layer {
+    position: absolute;
+    height: 150px;
+    left: 0;
+    top: 0;
+
+    &--base {
+      transform: translateZ(0);
+      background: orange;
+    }
+
+    &--back {
+      transform: translateZ(-1px);
+      background: red;
+    }
+  }
 }

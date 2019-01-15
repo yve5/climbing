@@ -37,7 +37,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="parallax">Parallax area</div>
+        <div className="parallax">
+          <div className="parallax__layer parallax__layer--back">
+            This is the background.
+          </div>
+          <div className="parallax__layer parallax__layer--base">
+            This is the foreground.
+          </div>
+        </div>
         <HashRouter>
           <Container className="App">
             <Row>
