@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import './Parallax.scss';
 
 class Parallax extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+
+    this.handleScroll = this.handleScroll.bind(this)
+
+    this.state = {
+      scrolled: 0,
+    };
+  }
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -15,36 +21,32 @@ class Parallax extends Component {
   }
 
   handleScroll(eve) {
-    let scrolled = window.pageYOffset;
-
-    // background.top = (scrolled) + 'px';
-
-    console.log(scrolled);
+    this.setState({ scrolled: Math.round(window.pageYOffset) });
   }
 
   render() {
     return (
       <div className="parallax">
-        <div 
+        <div
           className="parallax__layer"
-          style = {{
-            'top': '50%',
+          style={{
+            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.2) + 'px)',
           }}
-        >
+          >
           This is the one.
           </div>
-        <div 
+        <div
           className="parallax__layer parallax__layer--two"
-          style = {{
-            'top': '70%',
+          style={{
+            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.5) + 'px)',
           }}
-        >
+          >
           This is the two.
         </div>
-        <div 
+        <div
           className="parallax__layer parallax__layer--three"
-          style = {{
-            'top': '90%',
+          style={{
+            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.8) + 'px)',
           }}
         >
           This is the three.
