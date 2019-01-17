@@ -27,7 +27,7 @@ class App extends Component {
     this.handleCollapseChange = this.handleCollapseChange.bind(this);
 
     this.state = {
-      collapse: true
+      collapse: false
     };
   }
 
