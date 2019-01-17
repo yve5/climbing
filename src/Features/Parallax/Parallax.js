@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './parallax.scss';
+import './Parallax.scss';
 
 class Parallax extends Component {
   render() {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import Header from './Header/Header';
-import Accueil from './Accueil/Accueil';
-import Sorties from './Sorties/Sorties';
-import Evenements from './Evenements/Evenements';
-import Parallax from './Parallax/Parallax';
+import Header from './Features/Header/Header';
+import Accueil from './Features/Accueil/Accueil';
+import Sorties from './Features/Sorties/Sorties';
+import Evenements from './Features/Evenements/Evenements';
+import Parallax from './Features/Parallax/Parallax';
 
 import {
   Container,
