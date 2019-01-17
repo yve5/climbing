@@ -30,7 +30,7 @@ class Parallax extends Component {
         <div
           className="parallax__layer"
           style={{
-            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.2) + 'px)',
+            'transform': 'translateY(' + Math.round(this.state.scrolled * 0.8) + 'px)',
           }}
           >
           This is the one.
@@ -38,7 +38,7 @@ class Parallax extends Component {
         <div
           className="parallax__layer parallax__layer--two"
           style={{
-            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.5) + 'px)',
+            'transform': 'translateY(' + Math.round(this.state.scrolled * 0.4) + 'px)',
           }}
           >
           This is the two.
@@ -46,7 +46,7 @@ class Parallax extends Component {
         <div
           className="parallax__layer parallax__layer--three"
           style={{
-            'transform': 'translateY(-' + Math.round(this.state.scrolled * 0.8) + 'px)',
+            'transform': 'translateY(' + Math.round(this.state.scrolled * 0.2) + 'px)',
           }}
         >
           This is the three.
