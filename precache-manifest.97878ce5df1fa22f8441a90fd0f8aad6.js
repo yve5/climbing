@@ -16,15 +16,15 @@ self.__precacheManifest = [
     "url": "/climbing/static/js/runtime~main.caf56eb6.js"
   },
   {
-    "revision": "fad62424675654d3c78a",
-    "url": "/climbing/static/js/main.fad62424.chunk.js"
+    "revision": "0351dea680215e3f2c07",
+    "url": "/climbing/static/js/main.0351dea6.chunk.js"
   },
   {
     "revision": "a53e2ba6815be53e045a",
     "url": "/climbing/static/js/1.a53e2ba6.chunk.js"
   },
   {
-    "revision": "fad62424675654d3c78a",
+    "revision": "0351dea680215e3f2c07",
     "url": "/climbing/static/css/main.a13318ae.chunk.css"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/climbing/static/css/1.6346f874.chunk.css"
   },
   {
-    "revision": "e2b43eafe64d942333be5e500375b2bd",
+    "revision": "9db7cbeb2059793dabc67781999a00d6",
     "url": "/climbing/index.html"
   }
 ];
