@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import Accueil from './Accueil/Accueil';
 import Sorties from './Sorties/Sorties';
 import Evenements from './Evenements/Evenements';
+import Parallax from './Parallax/Parallax';
 
 import {
   Container,
@@ -37,14 +38,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="parallax">
-          <div className="parallax__layer parallax__layer--back">
-            This is the background.
-          </div>
-          <div className="parallax__layer parallax__layer--base">
-            This is the foreground.
-          </div>
-        </div>
+        <Parallax />
         <HashRouter>
           <Container className="App">
             <Row>
