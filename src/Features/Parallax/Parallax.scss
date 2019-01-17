@@ -1,28 +1,24 @@
 .parallax {
-    background-color: lime;
-    box-sizing: border-box;
-    
-    overflow-x: hidden;
-    overflow-y: auto;
-    
-    perspective: 1px;
-    height: 300px;
-    // height: 100vh;
-  
-    &__layer {
-      position: absolute;
-      height: 150px;
-      left: 0;
-      top: 0;
-  
-      &--base {
-        transform: translateZ(0);
-        background: orange;
-      }
-  
-      &--back {
-        transform: translateZ(-1px);
-        background: red;
-      }
+  $main-color: orange;
+
+  background-color: lighten($main-color, 30%);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+  &__layer {
+    background-color: lighten($main-color, 20%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    &--two {
+      background-color: lighten($main-color, 10%);
+    }
+
+    &--three {
+      background-color: lighten($main-color, 0%);
     }
   }
+}
