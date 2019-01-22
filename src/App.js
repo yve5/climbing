@@ -5,7 +5,7 @@ import Header from './Features/Header/Header';
 import Accueil from './Features/Accueil/Accueil';
 import Sorties from './Features/Sorties/Sorties';
 import Evenements from './Features/Evenements/Evenements';
-import Parallax from './Features/Parallax/Parallax';
+import ParallaxHeader from './Features/ParallaxHeader/ParallaxHeader';
 
 import {
   Container,
@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Parallax />
+        <ParallaxHeader />
         <HashRouter>
           <Container className="App">
             <Row>

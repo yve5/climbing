@@ -4,25 +4,25 @@ class Evenements extends Component {
   render() {
     return (
       <div>
-        <h2>Évènements & animations</h2>
+        <h2>Évènements</h2>
         <p>
-          Au CLIMBING, le partage dans la bonne humeur de nos activités favorites est primordial.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           <br />
-          C'est pourquoi nous organisons différents évènements tout au long de l'année pour vous faire découvrir les multiples facettes de la grimpe et partager notre passion :
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur :
         </p>
 
         <ul>
-          <li>participation au Téléthon avec l'installation d'une décente en rappel le long du centre administratif de Clamart,</li>
-          <li>soirées vidéos avec projection de films de grimpe,</li>
-          <li>challenge à thème,</li>
-          <li>stages et séjours...</li>
+          <li>ullamco laboris nisi ut aliquip ex ea commodo consequat,</li>
+          <li>reprehenderit in voluptate velit esse cillum,</li>
+          <li>occaecat cupidatat non proident,</li>
+          <li>dolore magna aliqua...</li>
         </ul>
 
         <h2>Compétitions</h2>
         <p>
-          Les jeunes peuvent participer aux compétitions départementales benjamins, minimes, cadets ou junior et peuvent ainsi être sélectionnés pour les compétitions régionales, voire inter-régionales puis nationales.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           <br />
-          Un condensé des règles officielles pour les compétitions FFME est disponible ici.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
     );

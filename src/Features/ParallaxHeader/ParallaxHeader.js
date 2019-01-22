@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Parallax.scss';
+import './ParallaxHeader.scss';
 
-class Parallax extends Component {
+class ParallaxHeader extends Component {
   constructor(props) {
     super(props);
 
@@ -26,9 +26,9 @@ class Parallax extends Component {
 
   render() {
     return (
-      <div className="parallax">
+      <div className="parallaxHeader">
         <div
-          className="parallax__layer"
+          className="parallaxHeader__layer"
           style={{
             'transform': 'translateY(' + Math.round(this.state.scrolled * 0.8) + 'px)',
           }}
@@ -36,7 +36,7 @@ class Parallax extends Component {
           This is the one.
           </div>
         <div
-          className="parallax__layer parallax__layer--two"
+          className="parallaxHeader__layer parallaxHeader__layer--two"
           style={{
             'transform': 'translateY(' + Math.round(this.state.scrolled * 0.4) + 'px)',
           }}
@@ -44,7 +44,7 @@ class Parallax extends Component {
           This is the two.
         </div>
         <div
-          className="parallax__layer parallax__layer--three"
+          className="parallaxHeader__layer parallaxHeader__layer--three"
           style={{
             'transform': 'translateY(' + Math.round(this.state.scrolled * 0.2) + 'px)',
           }}
@@ -56,4 +56,4 @@ class Parallax extends Component {
   }
 }
 
-export default Parallax;
+export default ParallaxHeader;

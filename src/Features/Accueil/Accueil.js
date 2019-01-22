@@ -57,23 +57,21 @@ class Accueil extends Component {
         </Row>
 
         <p>
-          Au CLIMBING, nous souhaitons vous faire découvrir les multiples facettes de l'escalade.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         </p>
 
         <p>
-          En complément de nos entrainements en salle, nous proposons des sorties à la journée en falaise et des stages sur plusieurs jours (escalade et canyonisme). 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
         </p>
 
         <Alert color="success">
-          Les inscriptions pour les adultes commenceront au forum des associations au stade Hunebelle le 8 septembre 2018.
-          Pour les jeunes, il reste peu de place pour le samedi matin, Contactez-nous par courriel avant de remplir les papiers d'inscription afin de réserver un créneau.
-          Le créneau 10-12ans est complet. Vous pouvez cependant nous contacter pour être mis sur liste d'attente pour l'année prochaine. 
-          Les documents d'inscription 2018-2019 sont en ligne pour les jeunes et les adultes.
-          Pour les réinscriprions, une préinscription n'est pas nécessaire.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Alert>
 
         <p>
-          D'autres infos sur la vie du club sont regroupées par là... et vous pouvez également nous retrouver sur le groupe facebook du club pour discuter de l'actualité du club ou organiser vos sorties ! Les documents d'inscriptions sont déja en ligne dans la rubrique Adhésion.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
     );
