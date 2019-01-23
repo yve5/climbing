@@ -28,7 +28,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Navbar color="light navbar-gutter" light expand="md">
+      <Navbar color="light navbar-gutter" light expand="md" style={{ 'margin': '10px 0' }}>
         <NavbarBrand>Climbing</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.props.collapse} navbar>
