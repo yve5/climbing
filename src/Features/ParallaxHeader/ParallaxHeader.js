@@ -15,15 +15,15 @@ class ParallaxHeader extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
 
     this.getParallaxHeight();
-    window.addEventListener("resize", this.getParallaxHeight);
+    window.addEventListener('resize', this.getParallaxHeight);
   };
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-    window.removeEventListener("resize", this.getParallaxHeight);
+    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.getParallaxHeight);
   }
 
   handleScroll(eve) {

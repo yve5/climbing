@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Accueil.scss';
+import ParallaxImg from '../ParallaxImg/ParallaxImg';
 
 import chausson from './images/chausson.jpg';
 import feuille from './images/feuille.jpg';
@@ -69,6 +70,7 @@ class Accueil extends Component {
         {fakeContent}
 
         <img src={lunettes} alt="lunettes" />
+        <ParallaxImg src={lunettes} alt="lunettes" />
 
         {fakeContent}
       </div>
