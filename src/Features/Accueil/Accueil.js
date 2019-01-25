@@ -32,7 +32,7 @@ class Accueil extends Component {
   }
   
   render() {
-    let collection = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let collection = [1, 2, 3, 4, 5];
     let fakeContent = collection.map(data => this.getLoremIpsum(data));
 
     return (
